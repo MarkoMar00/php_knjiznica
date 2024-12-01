@@ -16,11 +16,11 @@ curl_close($ch);
 $data = json_decode($json, true);
 
 $amountFound = $data['num_found'];
-$author = $data['docs']['0']['author_name']['0'];
 
 if ($amountFound > 0 ) {
+    $author = $data['docs']['0']['author_name']['0'];
     header("Location: admin.php?author=" . urlencode($author));
 } else {
-    header("Locatio: main.php?author=nepostojeci");
+    header("Location: admin.php?author=nepostojeci");
 }
 ?>
