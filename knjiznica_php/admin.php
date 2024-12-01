@@ -70,9 +70,9 @@
     <?php
     if(isset($_GET['author'])) {
         if ($_GET['author'] == "nepostojeci") {
-            echo "<p class=\"text-danger\"> Knjige nepostoji!</p>";
+            echo "<p class=\"text-danger\"> Knjiga ne postoji!</p>";
         } else {
-            echo "<p class=\"text-success\"> Knjige postoji!</p>";
+            echo "<p class=\"text-success\"> Knjiga postoji!</p>";
             echo "<p>Autor:" . $_GET['author'] . "</p>";
         }
     }
